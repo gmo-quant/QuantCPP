@@ -18,6 +18,10 @@
 #			Point.cpp
 #			PointTester.cpp
 
+dir="${HOME}/GMO/CPP/devTools/"
+templateFile="${dir}documentTemplates.py"
+echo $dir
+echo $HOME
 if [ $1 == 'help' ]
 then 
 	echo "./generateFiles <Class name>" 
@@ -36,7 +40,7 @@ else
 	touch $src_file
 	touch $header_file
 	touch $tester_file
-	python ./documentTemplates.py $header_file $src_file $tester_file
+	python $templateFile $header_file $src_file $tester_file
 fi
 
 
