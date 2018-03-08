@@ -19,9 +19,10 @@
 #			PointTester.cpp
 
 dir="${HOME}/GMO/CPP/devTools/"
-templateFile="${dir}documentTemplates.py"
+templateFile="./documentTemplates.py"
 echo $dir
 echo $HOME
+echo $templateFile
 if [ $1 == 'help' ]
 then 
 	echo "./generateFiles <Class name>" 
